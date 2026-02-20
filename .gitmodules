@@ -1,0 +1,4 @@
+[submodule "nvim"]
+	path = nvim
+	branch = develop
+	url = https://github.com/vymarkov/nvim.git
