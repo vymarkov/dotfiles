@@ -1,0 +1,10 @@
+# Minimal Alacritty config to set window opacity for transparency
+# Note: true/"real" transparency requires a compositor (picom on X11, or a Wayland compositor).
+# Try the `window.opacity` key first; if your Alacritty version doesn't support it, try `background_opacity`.
+
+window:
+  # Set to 0.0 (fully transparent) .. 1.0 (fully opaque). 0.90 = 90% opaque.
+  opacity: 0.90
+
+# Alternative (older Alacritty versions may use this):
+# background_opacity: 0.90
