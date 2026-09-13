@@ -3,3 +3,4 @@
 --ignore=DS_Store
 --ignore=home-manager/*
 --ignore=cursor
+--ignore=.agents

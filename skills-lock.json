@@ -13,6 +13,12 @@
       "skillPath": "commit/SKILL.md",
       "computedHash": "8f006b38d44e09176c4f5ea5589efefa06a253a08ad171871f15b361dae7ab64"
     },
+    "documentation-and-adrs": {
+      "source": "addyosmani/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/documentation-and-adrs/SKILL.md",
+      "computedHash": "f13054e8bd32a432df3e0e68240758cf61a9e8817aa8540f9d9831f427c47e0e"
+    },
     "github-actions-templates": {
       "source": "wshobson/agents",
       "sourceType": "github",
