@@ -2,3 +2,6 @@
 	path = nvim
 	branch = develop
 	url = https://github.com/vymarkov/nvim.git
+[submodule "zsh/oh-my-zsh-custom/plugins/zsh-bat"]
+	path = zsh/oh-my-zsh-custom/plugins/zsh-bat
+	url = https://github.com/fdellwing/zsh-bat.git
