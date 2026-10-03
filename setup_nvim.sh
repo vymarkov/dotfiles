@@ -18,9 +18,10 @@ fi
 mkdir -p "${HOME}/.local/share/nvim-flake" "${HOME}/.local/bin"
 
 echo "setup_nvim.sh: nix build ${FLAKE_REF}"
-nix build -o "${FLAKE_OUT}" "${FLAKE_REF}"
+nix --extra-experimental-features 'nix-command flakes' build -o "${FLAKE_OUT}" "${FLAKE_REF}"
 
 # Shim: re-exec the built binary (survives result replacement)
+rm -f "${NVIM_BIN}"
 cat > "${NVIM_BIN}" <<EOF
 #!/bin/sh
 exec "${FLAKE_OUT}/bin/nvim" "\$@"
@@ -29,6 +30,11 @@ chmod +x "${NVIM_BIN}"
 
 echo "setup_nvim.sh: Lazy! restore"
 "${NVIM_BIN}" --headless "+Lazy! restore" +qa
+
+if [ ! -d "${HOME}/.local/share/nvim/lazy/lazy.nvim" ]; then
+  echo "setup_nvim.sh: lazy.nvim not found after Lazy! restore" >&2
+  exit 1
+fi
 
 echo "setup_nvim.sh: TSUpdateSync"
 "${NVIM_BIN}" --headless "+TSUpdateSync" +qa
