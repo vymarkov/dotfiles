@@ -16,3 +16,9 @@ fi
 
 ./setup_auto_completions.sh
 ./setup_ai_agents.sh
+
+if command -v nix >/dev/null 2>&1; then
+  ./setup_nvim.sh || exit 1
+else
+  echo "nix not found; skipping nvim bootstrap. After installing Nix, run: ./setup_nvim.sh"
+fi
