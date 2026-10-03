@@ -1,6 +1,6 @@
 [submodule "nvim"]
 	path = nvim
-	branch = develop
+	branch = chore/trim-node-devops-tooling
 	url = https://github.com/vymarkov/nvim.git
 [submodule "zsh/oh-my-zsh-custom/plugins/zsh-bat"]
 	path = zsh/oh-my-zsh-custom/plugins/zsh-bat
