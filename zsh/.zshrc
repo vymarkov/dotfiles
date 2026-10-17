@@ -76,7 +76,11 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker-compose zsh-bat)
+plugins=(git docker-compose zsh-bat fnm)
+
+# fnm comes from devbox; must be on PATH before the OMZ fnm plugin loads.
+eval "$(devbox global shellenv)"
+zstyle ':omz:plugins:fnm' autostart yes
 
 source $ZSH/oh-my-zsh.sh
 
@@ -121,7 +125,3 @@ typeset -ag chpwd_functions
 if (( ! ${chpwd_functions[(I)_direnv_hook]} )); then
   chpwd_functions=(_direnv_hook $chpwd_functions)
 fi
-
-eval "$(devbox global shellenv)"
-
-eval "$(fnm env --use-on-cd --shell bash)"
