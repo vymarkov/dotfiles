@@ -1,3 +1,6 @@
+# Load early (before PATH / Oh My Zsh) so Codespaces secrets are available.
+[[ -r "${${(%):-%N}:A:h}/herdr-codespaces.zsh" ]] && source "${${(%):-%N}:A:h}/herdr-codespaces.zsh"
+
 # If you come from bash you might have to change your $PATH.
 export PATH="$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH"
 
