@@ -70,6 +70,7 @@
   #
   home.sessionVariables = {
     EDITOR = "nvim";
+    COPILOT_HOME = "$HOME/.config/copilot";
   };
 
   programs.zsh = {

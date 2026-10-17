@@ -1,0 +1,33 @@
+{
+  "theme": "dim",
+  "enabledPlugins": {},
+  "beep": true,
+  "copyOnSelect": true,
+  "includeCoAuthoredBy": false,
+  "defaultPermissionMode": "allow-all",
+  "notifications": true,
+  "screenReader": true,
+  "scrollbar": true,
+  "terminalNotifications": true,
+  "terminalProgress": true,
+  "toolSearch": true,
+  "footer": {
+    "showAiUsed": true,
+    "showBranch": true,
+    "showAgent": true,
+    "showCiStatus": true,
+    "showContextWindow": true,
+    "showModelEffort": true,
+    "showPullRequest": true,
+    "showQuota": true,
+    "showSandbox": true,
+    "showUsername": true
+  },
+  "ide": {
+    "autoConnect": true,
+    "openDiffOnEdit": false
+  },
+  "sidebar": {
+    "enabled": true
+  }
+}

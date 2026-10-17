@@ -1,0 +1,4 @@
+# Copilot writes runtime state into COPILOT_HOME; only settings.json is tracked.
+*
+!settings.json
+!.gitignore
