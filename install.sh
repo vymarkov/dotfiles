@@ -14,5 +14,6 @@ if [ -d "$HOME/.oh-my-zsh" ]; then
     "$HOME/.oh-my-zsh/custom/plugins/zsh-bat"
 fi
 
+./setup_zshrc.sh
 ./setup_auto_completions.sh
 ./setup_ai_agents.sh
