@@ -1,0 +1,39 @@
+# https://starship.rs/config/
+
+format = """
+$directory\
+$git_branch\
+$git_status\
+$nodejs\
+$memory_usage\
+${custom.disk}\
+$line_break\
+$character"""
+
+[directory]
+truncation_length = 3
+truncate_to_repo = true
+
+[git_branch]
+format = "on [$symbol$branch]($style) "
+symbol = " "
+
+[nodejs]
+format = "via [$symbol($version )]($style)"
+
+[memory_usage]
+disabled = false
+threshold = -1
+format = "$symbol[$ram]($style) "
+symbol = "󰍛 "
+style = "bold dimmed white"
+
+# Starship has no built-in disk module; root filesystem via df.
+[custom.disk]
+description = "Root filesystem disk usage"
+when = true
+command = "df -Ph / | awk 'NR==2 {print $3 \"/\" $2 \" (\" $5 \")\"}'"
+format = "$symbol[$output]($style) "
+symbol = "󰋊 "
+style = "bold dimmed white"
+shell = ["sh"]

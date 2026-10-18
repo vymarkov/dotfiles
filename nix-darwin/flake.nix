@@ -58,6 +58,7 @@
           pkgs.awscli2
           pkgs.gh
           pkgs.direnv
+          pkgs.starship
           pkgs.xcodes
           pkgs.zulu23
           pkgs.mkalias

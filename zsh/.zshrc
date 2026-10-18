@@ -14,7 +14,8 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+# Starship owns the prompt (see end of file).
+ZSH_THEME=""
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME="devcontainers"
@@ -111,3 +112,7 @@ export VISUAL=nvim
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias nvim="$HOME/.local/bin/nvim"
 zstyle ':omz:update' mode disabled
+
+# Starship (stowed to ~/.config/starship/starship.toml)
+export STARSHIP_CONFIG="${STARSHIP_CONFIG:-$HOME/.config/starship/starship.toml}"
+command -v starship >/dev/null && eval "$(starship init zsh)"
