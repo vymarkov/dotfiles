@@ -1,0 +1,6 @@
+# Ghostty configuration
+background-opacity = 0.8
+
+macos-option-as-alt = true
+keybind = alt+arrow_left=unbind
+keybind = alt+arrow_right=unbind
