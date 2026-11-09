@@ -1,0 +1,31 @@
+onboarding = false
+
+# new_cwd = "follow"
+
+[theme]
+name = "gruvbox"
+auto_switch = false
+
+[ui.toast]
+delivery = "system"
+
+[ui]
+show_agent_labels_on_pane_borders = false
+pane_borders = true
+
+status_indicators = "dots"
+[ui.sound]
+enabled = true
+
+[keys]
+focus_pane_down = ["prefix+j", "alt+down"]
+focus_pane_up = ["prefix+k", "alt+up"]
+focus_pane_left = ["prefix+h", "alt+left"]
+focus_pane_right = ["alt+right"]
+
+
+[[keys.command]]
+key = "prefix+m"
+type = "pane"
+command = "lazydocker"
+description = "open lazydocker"
