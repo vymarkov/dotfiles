@@ -22,6 +22,7 @@ focus_pane_down = ["prefix+j", "alt+down"]
 focus_pane_up = ["prefix+k", "alt+up"]
 focus_pane_left = ["prefix+h", "alt+left"]
 focus_pane_right = ["alt+right"]
+split_horizontal = ["prefix+d"]
 
 
 [[keys.command]]
