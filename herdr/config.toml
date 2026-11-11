@@ -30,3 +30,15 @@ key = "prefix+m"
 type = "pane"
 command = "lazydocker"
 description = "open lazydocker"
+
+[[keys.command]]
+key = "prefix+f"
+type = "plugin_action"
+command = "portfwd.scan"
+description = "forward a remote port"
+
+[[keys.command]]
+key = "prefix+shift+f"
+type = "plugin_action"
+command = "portfwd.list"
+description = "manage port forwards"
