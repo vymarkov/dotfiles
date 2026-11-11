@@ -217,7 +217,7 @@ alt-shift-semicolon = 'mode service'
 alt-shift-enter = 'mode apps'
 
 alt-s = 'exec-and-forget open -a /Applications/SDM.app'
-alt-w = 'exec-and-forget open -a /nix/store/z2iqr3c02fg9mzgnmhdxagqhpilik8ic-wezterm-0-unstable-2025-02-23/Applications/WezTerm.app'
+alt-w = 'exec-and-forget open -a /Applications/Ghostty.app'
 alt-p = 'exec-and-forget open -a /Applications/Nix Apps/Postman.app'
 alt-b = 'exec-and-forget open -a /Applications/Brave Browser.app'
 alt-v = 'exec-and-forget open -a /Applications/Visual Studio Code.app'
@@ -239,7 +239,7 @@ f = [
 backspace = ['close-all-windows-but-current', 'mode main']
 
 [mode.apps.binding]
-alt-w = ['exec-and-forget open -a /Applications/WezTerm.app', 'mode main']
+alt-w = ['exec-and-forget open -a /Applications/Ghostty.app', 'mode main']
 
 [workspace-to-monitor-force-assignment]
 1 = 1
