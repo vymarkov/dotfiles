@@ -2,6 +2,8 @@
 [[ -r "${${(%):-%N}:A:h}/herdr-codespaces.zsh" ]] && source "${${(%):-%N}:A:h}/herdr-codespaces.zsh"
 
 # If you come from bash you might have to change your $PATH.
+# Homebrew (Apple Silicon)
+eval "$(/opt/homebrew/bin/brew shellenv)"
 export PATH="$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH"
 
 # Copilot CLI config (stowed to ~/.config/copilot)
@@ -116,3 +118,8 @@ zstyle ':omz:update' mode disabled
 # Starship (stowed to ~/.config/starship/starship.toml)
 export STARSHIP_CONFIG="${STARSHIP_CONFIG:-$HOME/.config/starship/starship.toml}"
 command -v starship >/dev/null && eval "$(starship init zsh)"
+
+# Atuin shell history (stowed to ~/.config/atuin/config.toml). Oh My Zsh sources
+# lib/key-bindings.zsh during load, so init after it or Ctrl+R stays on zsh's
+# own history search.
+command -v atuin >/dev/null && eval "$(atuin init zsh)"

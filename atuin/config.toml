@@ -1,5 +1,2 @@
-
-sync_address = "https://atuin.tailc64409.ts.net"
-
 [dotfiles]
 enabled = true
