@@ -2,5 +2,7 @@
 background-opacity = 0.8
 
 macos-option-as-alt = true
-keybind = alt+arrow_left=unbind
-keybind = alt+arrow_right=unbind
+
+# Alt + Left/Right: move the cursor one word at a time
+keybind = alt+arrow_left=esc:b
+keybind = alt+arrow_right=esc:f
