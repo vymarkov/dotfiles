@@ -1,7 +1,8 @@
 #!/bin/sh
 set -e
 
-# Restore AI skills from skills-lock.json, then symlink into ~/.agents/skills.
+# Restore AI skills from skills-lock.json, then symlink into ~/.agents/skills
+# and ~/.claude/skills (Claude Code reads its own skills dir, not ~/.agents/skills).
 
 if ! command -v node >/dev/null 2>&1; then
   echo "Node.js is required to install AI skills (node not found on PATH)" >&2
@@ -16,16 +17,20 @@ if [ ! -f skills-lock.json ]; then
   exit 1
 fi
 
-npx --yes skills@1.5.26 experimental_install
+npx --yes skills@1.8.1 experimental_install
 
+# experimental_install only writes to "$root/.agents/skills" (project-relative
+# to this script's cwd) and has no -g/--global flag, so it can't reach the real
+# per-agent global dirs itself. Fan the restored skills out to each manually.
 skills_src="$root/.agents/skills"
-skills_dst="$HOME/.agents/skills"
-mkdir -p "$skills_dst"
-for skill_dir in "$skills_src"/*/; do
-  [ -d "$skill_dir" ] || continue
-  name=$(basename "$skill_dir")
-  case "$name" in
-    .*) continue ;;
-  esac
-  ln -sfn "${skill_dir%/}" "$skills_dst/$name"
+for skills_dst in "$HOME/.agents/skills" "$HOME/.claude/skills"; do
+  mkdir -p "$skills_dst"
+  for skill_dir in "$skills_src"/*/; do
+    [ -d "$skill_dir" ] || continue
+    name=$(basename "$skill_dir")
+    case "$name" in
+      .*) continue ;;
+    esac
+    ln -sfn "${skill_dir%/}" "$skills_dst/$name"
+  done
 done
