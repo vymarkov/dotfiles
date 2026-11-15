@@ -115,6 +115,10 @@ export VISUAL=nvim
 alias nvim="$HOME/.local/bin/nvim"
 zstyle ':omz:update' mode disabled
 
+# Personal aliases (stowed to ~/.config/zsh/aliases.zsh). Migrated from atuin's
+# dotfiles store, which atuin stopped exporting in 18.23.
+[[ -r "${ZDOTDIR:-$HOME/.config/zsh}/aliases.zsh" ]] && source "${ZDOTDIR:-$HOME/.config/zsh}/aliases.zsh"
+
 # Starship (stowed to ~/.config/starship/starship.toml)
 export STARSHIP_CONFIG="${STARSHIP_CONFIG:-$HOME/.config/starship/starship.toml}"
 command -v starship >/dev/null && eval "$(starship init zsh)"
