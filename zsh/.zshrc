@@ -119,6 +119,9 @@ zstyle ':omz:update' mode disabled
 export STARSHIP_CONFIG="${STARSHIP_CONFIG:-$HOME/.config/starship/starship.toml}"
 command -v starship >/dev/null && eval "$(starship init zsh)"
 
+# opencode
+export PATH=/home/node/.opencode/bin:$PATH
+
 # Atuin shell history (stowed to ~/.config/atuin/config.toml). Oh My Zsh sources
 # lib/key-bindings.zsh during load, so init after it or Ctrl+R stays on zsh's
 # own history search.
