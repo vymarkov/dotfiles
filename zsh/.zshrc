@@ -3,7 +3,7 @@
 
 # If you come from bash you might have to change your $PATH.
 # Homebrew (Apple Silicon)
-eval "$(/opt/homebrew/bin/brew shellenv)"
+[[ -x /opt/homebrew/bin/brew ]] && eval "$(/opt/homebrew/bin/brew shellenv)"
 export PATH="$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH"
 
 # Copilot CLI config (stowed to ~/.config/copilot)
