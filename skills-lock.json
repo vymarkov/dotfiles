@@ -1,77 +1,143 @@
 {
-  "version": 1,
+  "version": 2,
   "skills": {
     "argocd-advanced": {
       "source": "julianobarbosa/claude-code-skills",
       "sourceType": "github",
       "skillPath": "skills/argocd-advanced/SKILL.md",
-      "computedHash": "bc302b1418aa352414d0e0e1e719d5c8597ad7d63f7ebfaad6416ce356b33dbe"
+      "computedHash": "43a03f20f92c4c741b632941c450a3030dd2818970255972941ae128e1f8ad94"
     },
     "commit": {
       "source": "ghalex/skills",
       "sourceType": "github",
       "skillPath": "commit/SKILL.md",
-      "computedHash": "8f006b38d44e09176c4f5ea5589efefa06a253a08ad171871f15b361dae7ab64"
+      "computedHash": "50e8fd29d83070ae349eace4e0e53585ddfd759b1ed91958117ee3ec1d0c5953"
+    },
+    "docker-agent-config": {
+      "source": "docker/skills",
+      "sourceType": "github",
+      "skillPath": "skills/docker-agent-config/SKILL.md",
+      "computedHash": "ae799267d27f149e5f66060fa563237cebe3d8027a9f59b73afe4b3085cd0eec"
+    },
+    "docker-agent-deploy": {
+      "source": "docker/skills",
+      "sourceType": "github",
+      "skillPath": "skills/docker-agent-deploy/SKILL.md",
+      "computedHash": "8e5a2d84e7ce3de4d2a9c0aa12f1c120403e485e8c59d88046b52b6fc0d3891e"
+    },
+    "docker-agent-run": {
+      "source": "docker/skills",
+      "sourceType": "github",
+      "skillPath": "skills/docker-agent-run/SKILL.md",
+      "computedHash": "a94f9a761fdc571db94b9ab016928148775738dd37e7f1988124be878765327a"
+    },
+    "docker-build-strategies": {
+      "source": "docker/skills",
+      "sourceType": "github",
+      "skillPath": "skills/docker-build-strategies/SKILL.md",
+      "computedHash": "a9cc5c3839d60ec8e7ca390292e1d4784bc69cf962413cb17364e7b5a46783e1"
+    },
+    "docker-compose-patterns": {
+      "source": "docker/skills",
+      "sourceType": "github",
+      "skillPath": "skills/docker-compose-patterns/SKILL.md",
+      "computedHash": "fd752b44e789bbf42f8c0edd92df89c84871d46aee92785230e5260f866e8f99"
+    },
+    "docker-destructive-guardrails": {
+      "source": "docker/skills",
+      "sourceType": "github",
+      "skillPath": "skills/docker-destructive-guardrails/SKILL.md",
+      "computedHash": "c67ecba771ac58d43f79b4b0c07068c5ff90cf85c64daf50c68ecf6640bd6d7d"
+    },
+    "docker-docs": {
+      "source": "docker/skills",
+      "sourceType": "github",
+      "skillPath": "skills/docker-docs/SKILL.md",
+      "computedHash": "0f99705f1c1015a52bed6fb0ba7dc43b10f85618288291712e92fbd2f7178f2a"
+    },
+    "docker-project-foundations": {
+      "source": "docker/skills",
+      "sourceType": "github",
+      "skillPath": "skills/docker-project-foundations/SKILL.md",
+      "computedHash": "58fdbbc9acb9264cff9225135998e1fd47f74c28519e2707ee964d408db53afb"
+    },
+    "docker-sandboxes-kits": {
+      "source": "docker/skills",
+      "sourceType": "github",
+      "skillPath": "skills/docker-sandboxes-kits/SKILL.md",
+      "computedHash": "6a8b6123b2b50c99a9497b430567412c2d5ae6885ac76c169d9b26aa9aaa010a"
+    },
+    "docker-sandboxes-lifecycle": {
+      "source": "docker/skills",
+      "sourceType": "github",
+      "skillPath": "skills/docker-sandboxes-lifecycle/SKILL.md",
+      "computedHash": "d466257a2b0cd120f6733a70243b163dd65e54a186c97a76daf33f5d26045bc6"
+    },
+    "docker-sandboxes-network-credentials": {
+      "source": "docker/skills",
+      "sourceType": "github",
+      "skillPath": "skills/docker-sandboxes-network-credentials/SKILL.md",
+      "computedHash": "8326ad3f9387d68a84191ebb75717f2ce6ae3bc0b9ea1b98e435c2e73c511753"
     },
     "documentation-and-adrs": {
       "source": "addyosmani/agent-skills",
       "sourceType": "github",
       "skillPath": "skills/documentation-and-adrs/SKILL.md",
-      "computedHash": "85db994c5d2853bbd9ebdb8542e43d92b7229918a0c70126f0e94280ea1ceeec"
+      "computedHash": "deb39d7c8157563bc14a48f0d22003c82f4d8370b69c96efde476fe12318d188"
     },
     "github-actions-templates": {
       "source": "wshobson/agents",
       "sourceType": "github",
       "skillPath": "plugins/cicd-automation/skills/github-actions-templates/SKILL.md",
-      "computedHash": "26d9b7d4392712d3ff500ff535c8f68c03820111e22af74fd579f58f605b2166"
+      "computedHash": "4cfaaba2a265ae01444e6d0b4f629ef6ce190c6ca336c83c99b8a9afec70f702"
     },
     "gitops-workflow": {
       "source": "wshobson/agents",
       "sourceType": "github",
       "skillPath": "plugins/kubernetes-operations/skills/gitops-workflow/SKILL.md",
-      "computedHash": "877ef7e21cdf863257e7fe06154d629f510bbe8467485bd3970519e292e18424"
+      "computedHash": "c07f5f785f491331baeb5c4ea31ff7dba039136220e29e4e3c9a3b6b91fed7b7"
     },
     "ponytail": {
       "source": "DietrichGebert/ponytail",
       "sourceType": "github",
       "skillPath": "skills/ponytail/SKILL.md",
-      "computedHash": "061f887d9e3e735f85db3be3655a8936a00f24d5fb65ac4ab74a968a770fe342"
+      "computedHash": "56d72677aca02689ac89bd48734e8c19b40ab86716d1257eaf5f1238b43cda6b"
     },
     "ponytail-audit": {
       "source": "DietrichGebert/ponytail",
       "sourceType": "github",
       "skillPath": "skills/ponytail-audit/SKILL.md",
-      "computedHash": "1d718f893dabc01caad0dacef86444b5b4b3e1e59409527d66e8b5dd0cd85ae0"
+      "computedHash": "20dca08a5d047285c61702d496317eb84f501bbd573a45f3c8f93fdb3cecde4c"
     },
     "ponytail-debt": {
       "source": "DietrichGebert/ponytail",
       "sourceType": "github",
       "skillPath": "skills/ponytail-debt/SKILL.md",
-      "computedHash": "f5d1d2ab891ff0a650a90b67235e487828e7d2a189de08a1ae073032de379407"
+      "computedHash": "6bcafbbd5d7ab3c09fbe1b040c2c8f3d0aae3c7e6e24339be253af354ab5cacd"
     },
     "ponytail-gain": {
       "source": "DietrichGebert/ponytail",
       "sourceType": "github",
       "skillPath": "skills/ponytail-gain/SKILL.md",
-      "computedHash": "fca2297cf7b5fd26692f6bd94d398b522e19fa81ad6e2aaebf1933575f7a6803"
+      "computedHash": "8dc7d5a5314e0720ff2e2b740486314b4607765181ede820f6b7e86a3d5fd814"
     },
     "ponytail-help": {
       "source": "DietrichGebert/ponytail",
       "sourceType": "github",
       "skillPath": "skills/ponytail-help/SKILL.md",
-      "computedHash": "4582025c3923072fb6c35b8cbd75adf4f7ce47df0eff43cc9a2a39808537fd61"
+      "computedHash": "decfe28950443ddc04cf06badab1ebe325d149bc7dccdd3ce43ff8be27d92103"
     },
     "ponytail-review": {
       "source": "DietrichGebert/ponytail",
       "sourceType": "github",
       "skillPath": "skills/ponytail-review/SKILL.md",
-      "computedHash": "800dc0c86402978e12359f701b9e0c81ba4607a0cd0027f4596d0f835a67eadc"
+      "computedHash": "fe7b781db99ce79d931cdc798b3fbccd84b82538de4a3fc5f6d9d466946d1458"
     },
     "terraform-skill": {
       "source": "antonbabenko/terraform-skill",
       "sourceType": "github",
       "skillPath": "skills/terraform-skill/SKILL.md",
-      "computedHash": "c8a83e4435ef2be1c6855168657e93c606f4ae7d6279eabf940e7b8c93f4c987"
+      "computedHash": "6366eb4dae431c0eca0c9714447a6ff9ab7fe658eae1f7e0608b5e4141e64c02"
     }
   }
 }
