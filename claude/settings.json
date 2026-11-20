@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "defaultMode": "auto"
+  },
+  "model": "sonnet",
+  "theme": "dark-ansi",
+  "attribution": {
+    "commit": "",
+    "pr": ""
+  }
+}

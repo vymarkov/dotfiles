@@ -7,6 +7,9 @@ stow .
 mkdir -p "$HOME/.cursor"
 ln -sfn "$(pwd)/cursor/cli-config.json" "$HOME/.cursor/cli-config.json"
 
+mkdir -p "$HOME/.claude"
+ln -sfn "$(pwd)/claude/settings.json" "$HOME/.claude/settings.json"
+
 # Oh My Zsh. The directory alone is not proof of an install: this script and
 # setup_auto_completions.sh both create it to hold custom/ and completions/,
 # so test for the framework entrypoint instead.
