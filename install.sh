@@ -37,6 +37,15 @@ if [ -d "$omz_dir" ]; then
     "$omz_dir/custom/plugins/zsh-bat"
 fi
 
+# Mise (https://mise.jdx.dev). Binary goes to ~/.local/bin; .zshenv puts that
+# on PATH, and the Oh My Zsh `mise` plugin activates it in interactive shells.
+if ! command -v mise >/dev/null 2>&1 && [ ! -x "$HOME/.local/bin/mise" ]; then
+  echo "Installing mise into $HOME/.local/bin"
+  if ! curl -fsSL https://mise.run | sh; then
+    echo "warning: could not install mise; later run: curl https://mise.run | sh"
+  fi
+fi
+
 ./setup_zshrc.sh
 ./setup_auto_completions.sh
 ./setup_ai_agents.sh
