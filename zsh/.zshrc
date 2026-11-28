@@ -79,9 +79,10 @@ ZSH_THEME=""
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker-compose zsh-bat fnm direnv)
+plugins=(git docker-compose zsh-bat fnm direnv mise)
 
 # fnm comes from devbox; must be on PATH before the OMZ fnm plugin loads.
+# mise is on PATH via .zshenv ($HOME/.local/bin); the OMZ plugin runs `mise activate`.
 eval "$(devbox global shellenv)"
 zstyle ':omz:plugins:fnm' autostart yes
 
